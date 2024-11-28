@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+}
+nav {
+  background-color: #333;
+  padding: 1em;
+  color: white;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em;
+  width: 30%;
+}
+

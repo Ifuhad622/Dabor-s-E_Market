@@ -1,0 +1,11 @@
+#backend/
+.env
+package.json
+package-lock.json
+
+#frontend/
+package.json
+package-lock.json
+
+
+#gitignore
