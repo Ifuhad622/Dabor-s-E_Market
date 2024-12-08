@@ -8,19 +8,50 @@
   <script defer src="js/script.js"></script>
 </head>
 <body>
+  <!-- Hero Banner -->
+  <header class="hero-banner">
+    <div class="hero-content">
+      <h1>Welcome to Dabor's Twin Fashion World</h1>
+      <p>Discover quality Ankara for everyone!</p>
+      <button class="cta-button">Shop Now</button>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
   <nav>
-    <h1>Dabor's Twin Fashion World</h1>
-    <ul>
+    <div class="logo">
+      <img src="images/logo.png" alt="Dabor's Twin Fashion World">
+    </div>
+    <button class="hamburger-menu">&#9776;</button>
+    <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">Products</a></li>
       <li><a href="#">Cart</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-    <h2>Our Products</h2>
-    <div id="product-list" class="product-grid"></div>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search products..." />
+    <button id="search-button">Search</button>
   </div>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Shop by Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">Men</div>
+      <div class="category-card">Women</div>
+      <div class="category-card">Accessories</div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div id="product-list" class="product-grid"></div>
+  </section>
 </body>
 </html>
 
