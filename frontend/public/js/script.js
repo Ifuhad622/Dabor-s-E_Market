@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const productList = document.getElementById('product-list');
-<<<<<<< HEAD
   const searchInput = document.getElementById('search-input');
   const searchButton = document.getElementById('search-button');
 
   // Fetch Products
-=======
   const loadingMessage = document.createElement('p');
   loadingMessage.textContent = 'Loading products...';
   productList.appendChild(loadingMessage);
 
->>>>>>> 8354ce65bebd88f5b25a93b0fd5373da9581680a
+
   fetch('/api/products')
     .then(response => {
       if (!response.ok) {
@@ -19,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(products => {
-<<<<<<< HEAD
-      displayProducts(products);
+     displayProducts(products);
 
       // Filter functionality
       searchButton.addEventListener('click', () => {
@@ -49,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-=======
       productList.innerHTML = ''; // Clear loading message
       if (products.length === 0) {
         productList.innerHTML = '<p>No products available.</p>';
@@ -71,4 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
       productList.innerHTML = '<p>Error loading products. Please try again later.</p>';
     });
 });
->>>>>>> 8354ce65bebd88f5b25a93b0fd5373da9581680a
